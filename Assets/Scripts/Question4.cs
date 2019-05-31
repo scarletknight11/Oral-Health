@@ -11,21 +11,43 @@ public class Question4 : MonoBehaviour {
     public GameObject Choice1;
     public GameObject Choice2;
     public GameObject Choice3;
+    public GameObject sad;
+    public GameObject happy;
+
     public int ChoiceMade;
+
+    void Start()
+    {
+        Choice1.SetActive(false);
+        Choice2.SetActive(false);
+        Choice3.SetActive(false);
+    }
 
     public void BrightWhite()
    {
-
-   }
+        Choice1.SetActive(true);
+        Choice2.SetActive(true);
+        Choice3.SetActive(true);
+        sad.SetActive(true);
+        SceneManager.LoadScene("Report");
+    }
 
    public void DullWhite()
    {
+        Choice1.SetActive(true);
+        Choice2.SetActive(true);
+        Choice3.SetActive(true);
+        sad.SetActive(true);
+        SceneManager.LoadScene("Report");
+    }
 
-   }
-
-   public void YellowWhite()
-   {
-
-   }
+    public void YellowWhite()
+    {
+        Choice1.SetActive(true);
+        Choice2.SetActive(true);
+        Choice3.SetActive(true);
+        happy.SetActive(true);
+        SceneManager.LoadScene("Report");
+    }
 
 }
