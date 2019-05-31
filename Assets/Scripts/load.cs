@@ -8,7 +8,7 @@ public class load : MonoBehaviour {
 
 	public void Slider_Changed()
     {
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("Question 1");
     }
 
 
